@@ -166,12 +166,22 @@ if(PDF_EXPORT){
 }
 ```
 
+```{css, echo=FALSE}
+.aside {
+  padding-top: 0;
+}
+
+.aside > p:first-of-type {
+  margin-top: 0;
+}
+```
 
 Aside
 ================================================================================
 
 
 ![avatar](Paul.jpg){width=100%}
+
 Contact {#contact}
 --------------------------------------------------------------------------------
 
@@ -215,7 +225,7 @@ Paul Yuchao Dong {#title}
 
 
 ```{r, results='asis'}
-intro_text <- glue("Vice President of Spring Asset. as a CFA Charterholder, I have been working as a real estate finance professional for 12 years. Studied at Tsinghua University and University of Hong Kong. I had worked on IPO, disposal of significant commercial property and offshore acquisitions. I had been working with my current employer Spring Asset Management for more than 5 years, focusing on financing and investment.")
+intro_text <- glue("Vice President of Spring Asset. As a CFA Charterholder, I have been working as a real estate finance professional for 12 years. Studied at Tsinghua University and University of Hong Kong. I had worked on IPO, disposal of significant commercial property and offshore acquisitions. I had been working with my current employer Spring Asset Management for more than 5 years, focusing on financing and investment.")
 
 cat(sanitize_links(intro_text))
 ```
@@ -223,12 +233,6 @@ cat(sanitize_links(intro_text))
 I am broadly interested in data munging and visualization, Bayesian data analysis and mathematics.
 
 
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r, results='asis', echo = FALSE}
-print_section(position_data, 'research_positions')
-```
 
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -246,93 +250,4 @@ Certificate {data-icon=book}
 ```{r, results='asis', echo = FALSE}
 print_section(position_data, 'certificate')
 ```
-
-
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'teaching_positions')
-```
-
-
-
-Grants  {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'grant')
-```
-
-
-
-Books {data-icon=book}
---------------------------------------------------------------------------------
-
-
-
-```{r}
-print_section(position_data, 'book_chapters')
-```
-
-
-
-Publications {data-icon=book}
---------------------------------------------------------------------------------
-
-::: aside
-
-```{r}
-profile = jsonlite::fromJSON("profile.json")
-
-  glue(
-
-"
-+ Citation = {profile$total_cites}
-+ H-index = {profile$h_index}
-+ I10-index = {profile$i10_index}
-
-"
-  ) %>% print()
-
-```
-
-![](citation.png)
-:::
-
-
-```{r}
-print_section(position_data, 'academic_articles')
-```
-
-
-
-Conference proceedings {data-icon=group}
---------------------------------------------------------------------------------
-
-
-
-```{r}
-print_section(position_data, 'presentation')
-```
-
-
-```{r}
-if(PDF_EXPORT){
-  cat("
-  
-Links {data-icon=link}
---------------------------------------------------------------------------------
-
-
-
-")
-  
-  walk2(links, 1:length(links), function(link, index){
-    print(glue('{index}. {link}'))
-  })
-}
-```
-
 
