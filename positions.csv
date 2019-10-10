@@ -1,6 +1,7 @@
-loc,title,institution,start,end,description_1,description_2,description_3,section,order
-The University of Hong Kong,"PhD., Bioinformaitcs","Hong Kong, CN",2013,2017,Thesis: Big-data computational methods for studying molecular evolution: from accurate genome assembly to phylogenetic analysis and data integration,NA,NA,education,1
-Anhui Medical University,"M.S., Biochemistry and Molecular Biology","Hefei, CN",2006,2009,Thesis: miRNA?Ðá???í§În???¡Iþƒ?Ä¯????“¯§~¦ ?§~ÏÒ,NA,NA,education,2
-South China Agricultural University,"B.S., Biotechnology","Guangzhou, CN",2001,2005,NA,NA,NA,education,3
-Institut Pasteur,Train the Trainers,"Paris, FR",2015,2015,NA,NA,NA,education,NA
-Centre for Enhancement of Teaching and Learning,Certificate of Teaching and Learning in Higher Education,The University of Hong Kong,2015,2015,NA,NA,NA,certificate,NA
+section,loc,title,institution,start,end,description_1,description_2,description_3,order
+education,The University of Hong Kong,M.Sc. in Real Estate Investment and Financing,Hong Kong,2008,2010,Led workshop projects and managed professionals from mixed backgrounds in the process,NA,NA,1
+education,Tsinghua University,Bachelor of Mechanical Engineering and Automation,"Beijing, CN",2003,2007,Thesis: Numeric simulation of forging process in train manufacturing,"Highest score in Calculus, Linear Algebra and Analytical Geometry",NA,2
+certificate,CFA Institute,Chartered Financial Analyst,,,,NA,NA,NA,NA
+industry_positions,Spring Asset Management,Vice President,Hong Kong,2014,9999,Acquisition and financing of 84 properties of GBP73.5 mn in the UK,Hedging and other corporate finance issues,"Investor relationship, message crafting and meetings",
+industry_positions,Link REIT,Senior Analyst,Hong Kong,2012,2014,Formulate strategy for China expansion and MOU with China Vanke,Penned white paper for change in regulatory policy,,
+industry_positions,Swire Properties,Corporate Finance Executive,Hong Kong,2007,2012,Billion dollar listing and disposal of commerical properties,Built and maintained financial models,Functioned as a gateway between a division that generates business ideas and one that underwrites business proposals,

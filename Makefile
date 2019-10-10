@@ -1,7 +1,4 @@
-cv: citation
-	Rscript -e 'rmarkdown::render("index.Rmd")'
-
-cv2:
+cv:
 	Rscript -e 'rmarkdown::render("index.Rmd")'
 
 pdf:
