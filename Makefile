@@ -10,6 +10,5 @@ pdf:
 citation:
 	Rscript -e 'source("citation.R")'
 
-proxy:
-	sh ../ygc-utilities/proxy.sh
+
 
