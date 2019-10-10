@@ -4,9 +4,11 @@ author: Paul Dong
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
-    css: ['styles.css']
     # set it to true for a self-contained HTML page but it'll take longer to render
+    css: ['styles.css']
     self_contained: true
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, include=FALSE}

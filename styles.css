@@ -36,6 +36,8 @@ sup{
    /* Override default right margin for sidebar*/
   --pagedjs-margin-right: 0.2in;
   --pagedjs-margin-left: 0.2in;
+  --pagedjs-margin-top: 0.2in;
+  --pagedjs-margin-bottom: 0.2in;
 }
 
 :root{
@@ -86,13 +88,13 @@ sup{
   padding-top: 0.005rem;
 }
 
-/* This icon isn't centered by default which is lame */ 
+/* This icon isn't centered by default which is lame */
 .fa-laptop {
   margin-left: -3px;
 }
 
 
-/* End things I have changed */ 
+/* End things I have changed */
 
 
 html {
