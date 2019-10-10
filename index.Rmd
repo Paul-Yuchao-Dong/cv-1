@@ -172,24 +172,11 @@ Aside
 
 
 ![avatar](Paul.jpg){width=100%}
-
-```{r}
-# When in export mode the little dots are unaligned, so fix that. 
-if(PDF_EXPORT){
-  cat("View this CV online with links at #####githublint")
-}
-```
-
 Contact {#contact}
 --------------------------------------------------------------------------------
 
-
 - <i class="fa fa-envelope"></i> paul.ycdong@gmail.com
-- <i class="fa fa-twitter"></i> PaulCynic
-- <i class="fa fa-github"></i> github.com/Paul-Yuchao-Dong
 - <i class="fa fa-phone"></i> (852) 6794 1690
-
-
 
 Skills {#skills}
 --------------------------------------------------------------------------------
@@ -218,13 +205,6 @@ Online Courses
 
 - Stat 110 of Harvard
 - Statistical Rethinking of Max Planck Institue
-
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
-
-
-Last updated on `r Sys.Date()`.
-
 
 
 Main
