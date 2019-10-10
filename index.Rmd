@@ -1,6 +1,6 @@
 ---
-title: "Guangchuang Yu's CV"
-author: Guangchuang Yu
+title: "Paul Yuchao Dong's CV"
+author: Paul Dong
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -30,7 +30,7 @@ library(glue)
 library(tidyverse)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -171,12 +171,12 @@ Aside
 ================================================================================
 
 
-![logo](ygc.jpg){width=100%}
+![avatar](Paul.jpg){width=100%}
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
-  cat("View this CV online with links at _guangchuangyu.github.io/cv_")
+  cat("View this CV online with links at #####githublint")
 }
 ```
 
@@ -184,40 +184,40 @@ Contact {#contact}
 --------------------------------------------------------------------------------
 
 
-- <i class="fa fa-envelope"></i> guangchuangyu@gmail.com
-- <i class="fa fa-twitter"></i> guangchuangyu
-- <i class="fa fa-github"></i> github.com/GuangchuangYu
-- <i class="fa fa-link"></i> guangchuangyu.github.io
-- <i class="fa fa-weixin"></i> biobabble
-- <i class="fa fa-phone"></i> (86) 13826432521
+- <i class="fa fa-envelope"></i> paul.ycdong@gmail.com
+- <i class="fa fa-twitter"></i> PaulCynic
+- <i class="fa fa-github"></i> github.com/Paul-Yuchao-Dong
+- <i class="fa fa-phone"></i> (852) 6794 1690
 
 
 
-Selected R packages {#skills}
+Skills {#skills}
 --------------------------------------------------------------------------------
 
-NGS
+Real Estate
 
-- ChIPseeker
+- 12 years of experience
+- Covers UK, China, and Hong Kong
+- Acquisition, disposal, financing 
+- Asset Management
 
-Ontology
+Finance
 
-- clusterProfiler 
-- DOSE
-- enrichplot
-- GOSemSim
+- CFA Charterholder
+- IPO
+- Syndicated Loan
+- Hedging strategy
 
-Phylogeny
+Data Science
 
-- tidytree
-- treeio
-- ggtree
+- Time series analysis with insider info to identity stock issuance opportunity
+- Interactive visualization for lease expiry profile
+- Interative Map of UK for portfolio valuation and analysis
 
-Visualization
+Online Courses
 
-- ggimage
-- ggplotify
-- seqcombo
+- Stat 110 of Harvard
+- Statistical Rethinking of Max Planck Institue
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
@@ -230,24 +230,17 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Guangchuang Yu {#title}
+Paul Yuchao Dong {#title}
 --------------------------------------------------------------------------------
 
 
 ```{r, results='asis'}
-intro_text <- glue("Professor of Bioinformatics at [Southern Medical University](http://www.smu.edu.cn/). I have developed more than 20 R packages, including ",
-  {Biocpkg("clusterProfiler")}, ", ", 
-  {Biocpkg("ChIPseeker")}, ", ",
-  {Biocpkg("treeio")}, " and ",
-  {Biocpkg("ggtree")}, 
-  ", to help biologists to explore and understand their data.")
+intro_text <- glue("Vice President of Spring Asset. as a CFA Charterholder, I have been working as a real estate finance professional for 12 years. Studied at Tsinghua University and University of Hong Kong. I had worked on IPO, disposal of significant commercial property and offshore acquisitions. I had been working with my current employer Spring Asset Management for more than 5 years, focusing on financing and investment.")
 
 cat(sanitize_links(intro_text))
 ```
 
-I am broadly interested in bioinformatics, metagenomics, molecular evolution, data integration and visualization.
-
-
+I am broadly interested in data munging and visualization, Bayesian data analysis and mathematics.
 
 
 Research Experience {data-icon=laptop}
